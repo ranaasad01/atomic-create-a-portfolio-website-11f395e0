@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "tagline": "Creando experiencias digitales reflexivas con cuidado e intención.",
+    "navHeading": "Navegación",
+    "contactHeading": "Ponte en contacto",
+    "availability": "Abierto a nuevas oportunidades",
+    "copyright": "© 2024 Alex Morgan. Todos los derechos reservados.",
+    "madeWith": "Diseñado y desarrollado con cuidado"
+  },
+  "hero": {
+    "eyebrow": "Desarrollador Full-Stack",
+    "heading": "Creando software hermoso y con propósito",
+    "subheading": "Diseño y desarrollo de experiencias web que son rápidas, accesibles y un placer de usar.",
+    "cta": {
+      "primary": "Ver mi trabajo",
+      "secondary": "Ponte en contacto"
+    },
+    "ctaSecondary": "Ponte en contacto",
+    "badge": "Portafolio",
+    "badge2": {
+      "sub": "Disponible para trabajar",
+      "title": "Abierto a oportunidades"
+    },
+    "findMe": "Conéctate conmigo",
+    "heading1": "Diseñador y",
+    "heading2": "desarrollador",
+    "subtext": "Creo experiencias digitales hermosas y funcionales que los usuarios aman."
+  },
+  "about": {
+    "eyebrow": "Acerca de mí",
+    "heading": "Apasionado por la artesanía y la claridad",
+    "bio1": "Soy Alex Morgan, desarrollador full-stack con más de cinco años de experiencia construyendo productos que la gente ama. Mi trabajo se encuentra en la intersección de la ingeniería y el diseño.",
+    "bio2": "Me importan profundamente los detalles — desde interfaces perfectas hasta código limpio y mantenible. Cuando no estoy construyendo, estoy leyendo, caminando o experimentando con nuevas tecnologías.",
+    "skillsHeading": "Habilidades y herramientas",
+    "ctaLabel": "Descargar CV",
+    "bio": {
+      "eyebrow": "Acerca de mí",
+      "heading": "Diseñador y desarrollador apasionado por experiencias limpias e intuitivas",
+      "p1": "Creo productos digitales que resuelven problemas reales. Con experiencia en diseño y desarrollo, cierro la brecha entre la estética y la funcionalidad para crear experiencias de usuario fluidas.",
+      "p2": "Creo que el gran diseño es invisible — funciona tan bien que los usuarios no piensan en él. Cada píxel, interacción y elección de palabras tiene un propósito.",
+      "p3": "Cuando no estoy diseñando, me encontrarás explorando nuevas herramientas, contribuyendo a proyectos de código abierto o compartiendo lo que he aprendido con la comunidad."
+    },
+    "cta": {
+      "button": "Trabajemos juntos",
+      "heading": "¿Listo para colaborar?",
+      "subtext": "Siempre me interesa escuchar sobre nuevos proyectos y oportunidades."
+    },
+    "hero": {
+      "badge": "Acerca de",
+      "eyebrow": "Conóceme",
+      "headline": "Diseñador, desarrollador y solucionador creativo de problemas",
+      "imageAlt": "Foto de retrato",
+      "subtext": "Diseño y construyo experiencias digitales que los usuarios aman."
+    },
+    "skills": {
+      "eyebrow": "Qué hago",
+      "heading": "Habilidades y experiencia",
+      "subtext": "Una combinación de pensamiento de diseño, habilidades técnicas y enfoque centrado en el usuario"
+    },
+    "timeline": {
+      "eyebrow": "Trayectoria",
+      "heading": "Experiencia e hitos"
+    }
+  },
+  "projects": {
+    "eyebrow": "Trabajos Destacados",
+    "heading": "Proyectos de los que estoy orgulloso",
+    "subheading": "Una selección curada de trabajos que abarcan diseño de productos, ingeniería y desarrollo creativo.",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todos los Proyectos",
+    "caseStudy": "Caso de Estudio",
+    "ctaBody": "¿Listo para ver qué podemos construir juntos? Comencemos una conversación.",
+    "ctaButton": "Ponte en Contacto",
+    "ctaHeading": "¿Interesado en trabajar juntos?",
+    "emptyBody": "Sin proyectos aún. Vuelve pronto para actualizaciones.",
+    "emptyTitle": "Proyectos Próximamente",
+    "featuredBadge": "Destacado",
+    "githubLink": "Ver Código",
+    "liveLink": "Ver en Vivo"
+  },
+  "contact": {
+    "eyebrow": "Hablemos",
+    "heading": "Inicia una conversación",
+    "subheading": "¿Tienes un proyecto en mente o solo quieres saludar? Me encantaría saber de ti.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu@email.com",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo Electrónico",
+    "messageLabel": "Mensaje",
+    "submitLabel": "Enviar Mensaje",
+    "successMessage": "Gracias por comunicarte. Me pondré en contacto pronto.",
+    "errorMessage": "Algo salió mal. Por favor, intenta de nuevo.",
+    "findMe": "Encuéntrame en otros lugares",
+    "form": {
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "privacy": "Respeto tu privacidad. Puedes desuscribirte en cualquier momento.",
+      "sending": "Enviando...",
+      "submit": "Enviar mensaje"
+    },
+    "formHeading": "Hablemos",
+    "formSubheading": "¿Tienes un proyecto en mente? Ponte en contacto.",
+    "leftBody": "Siempre estoy abierto a nuevas oportunidades, colaboraciones y conversaciones. Ya sea que tengas un proyecto específico o simplemente quieras charlar, no dudes en contactarme.",
+    "leftHeading": "Ponte en contacto",
+    "responseLabel": "Tiempo de respuesta",
+    "responseTime": "Generalmente dentro de 24 horas",
+    "sendAnother": "Enviar otro mensaje",
+    "successBody": "¡Gracias por contactarme! Te responderé pronto.",
+    "successTitle": "Mensaje enviado"
+  },
+  "cta": {
+    "button": "Iniciar un proyecto",
+    "eyebrow": "¿Listo?",
+    "heading": "Creemos algo increíble juntos",
+    "subtext": "¿Tienes una idea? Hablemos sobre cómo podemos hacerla realidad."
+  },
+  "services": {
+    "eyebrow": "Lo que ofrezco",
+    "heading": "Servicios",
+    "learnMore": "Más información",
+    "subtext": "Soluciones personalizadas para dar vida a tus ideas."
+  },
+  "testimonials": {
+    "eyebrow": "Prueba social",
+    "heading": "Lo que otros dicen"
+  },
+  "skills": [
+    {
+      "name": "React",
+      "category": "frontend"
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend"
+    },
+    {
+      "name": "Next.js",
+      "category": "frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend"
+    },
+    {
+      "name": "Node.js",
+      "category": "backend"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "backend"
+    },
+    {
+      "name": "GraphQL",
+      "category": "backend"
+    },
+    {
+      "name": "Figma",
+      "category": "design"
+    },
+    {
+      "name": "Framer Motion",
+      "category": "tools"
+    },
+    {
+      "name": "Git",
+      "category": "tools"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": "1",
+      "title": "Horizon Dashboard",
+      "description": "A real-time analytics platform for SaaS businesses, featuring live charts, team management, and custom reporting.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Recharts"
+      ],
+      "image": "/images/horizon-dashboard-analytics.jpg",
+      "href": "#"
+    },
+    {
+      "id": "2",
+      "title": "Bloom E-Commerce",
+      "description": "A boutique online store with a focus on accessibility and conversion, built with a headless CMS and edge delivery.",
+      "tags": [
+        "React",
+        "Shopify",
+        "Tailwind"
+      ],
+      "image": "/images/bloom-ecommerce-boutique.jpg",
+      "href": "#"
+    },
+    {
+      "id": "3",
+      "title": "Waypoint Travel App",
+      "description": "A mobile-first travel planning app that helps users discover, save, and share itineraries with friends.",
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Maps API"
+      ],
+      "image": "/images/waypoint-travel-app.jpg",
+      "href": "#"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Crafting thoughtful digital experiences with care and intention.",
+    "navHeading": "Navigation",
+    "contactHeading": "Get in Touch",
+    "availability": "Open to new opportunities",
+    "copyright": "© 2024 Alex Morgan. All rights reserved.",
+    "madeWith": "Designed and built with care"
+  },
+  "hero": {
+    "eyebrow": "Full-Stack Developer",
+    "heading": "Building beautiful, purposeful software",
+    "subheading": "I design and develop web experiences that are fast, accessible, and a joy to use.",
+    "cta": {
+      "primary": "View my work",
+      "secondary": "Get in touch"
+    },
+    "ctaSecondary": "Get in Touch",
+    "badge": "Portfolio",
+    "badge2": {
+      "sub": "Available for work",
+      "title": "Open to opportunities"
+    },
+    "findMe": "Connect with me",
+    "heading1": "Designer &",
+    "heading2": "developer",
+    "subtext": "I create beautiful, functional digital experiences that users love."
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "heading": "Passionate about craft and clarity",
+    "bio1": "I'm Alex Morgan, a full-stack developer with over five years of experience building products that people love. My work sits at the intersection of engineering and design.",
+    "bio2": "I care deeply about the details — from pixel-perfect interfaces to clean, maintainable code. When I'm not building, I'm reading, hiking, or experimenting with new technologies.",
+    "skillsHeading": "Skills and Tools",
+    "ctaLabel": "Download Resume",
+    "bio": {
+      "eyebrow": "About me",
+      "heading": "Designer & developer with a passion for clean, intuitive experiences",
+      "p1": "I craft digital products that solve real problems. With a background in both design and development, I bridge the gap between aesthetics and functionality to create seamless user experiences.",
+      "p2": "I believe great design is invisible—it works so well that users don't think about it. Every pixel, interaction, and word choice serves a purpose.",
+      "p3": "When I'm not designing, you'll find me exploring new tools, contributing to open-source projects, or sharing what I've learned with the community."
+    },
+    "cta": {
+      "button": "Let's work together",
+      "heading": "Ready to collaborate?",
+      "subtext": "I'm always interested in hearing about new projects and opportunities."
+    },
+    "hero": {
+      "badge": "About",
+      "eyebrow": "Get to know me",
+      "headline": "Designer, developer, and creative problem-solver",
+      "imageAlt": "Portrait photo",
+      "subtext": "I design and build digital experiences that users love."
+    },
+    "skills": {
+      "eyebrow": "What I do",
+      "heading": "Skills & expertise",
+      "subtext": "A blend of design thinking, technical skills, and user-centered approach"
+    },
+    "timeline": {
+      "eyebrow": "Journey",
+      "heading": "Experience & milestones"
+    }
+  },
+  "projects": {
+    "eyebrow": "Selected Work",
+    "heading": "Projects I'm proud of",
+    "subheading": "A curated selection of work spanning product design, engineering, and creative development.",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects",
+    "caseStudy": "Case Study",
+    "ctaBody": "Ready to see what we can build together? Let's start a conversation.",
+    "ctaButton": "Get in Touch",
+    "ctaHeading": "Interested in working together?",
+    "emptyBody": "No projects yet. Check back soon for updates.",
+    "emptyTitle": "Projects Coming Soon",
+    "featuredBadge": "Featured",
+    "githubLink": "View Code",
+    "liveLink": "View Live"
+  },
+  "contact": {
+    "eyebrow": "Let's Talk",
+    "heading": "Start a conversation",
+    "subheading": "Have a project in mind or just want to say hello? I'd love to hear from you.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Tell me about your project...",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitLabel": "Send Message",
+    "successMessage": "Thanks for reaching out. I'll be in touch soon.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "findMe": "Find me elsewhere",
+    "form": {
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "privacy": "I respect your privacy. Unsubscribe at any time.",
+      "sending": "Sending...",
+      "submit": "Send message"
+    },
+    "formHeading": "Let's talk",
+    "formSubheading": "Have a project in mind? Get in touch.",
+    "leftBody": "I'm always open to new opportunities, collaborations, and conversations. Whether you have a specific project or just want to chat, feel free to reach out.",
+    "leftHeading": "Get in touch",
+    "responseLabel": "Response time",
+    "responseTime": "Usually within 24 hours",
+    "sendAnother": "Send another message",
+    "successBody": "Thanks for reaching out! I'll get back to you soon.",
+    "successTitle": "Message sent"
+  },
+  "skills": [
+    {
+      "name": "React",
+      "category": "frontend"
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend"
+    },
+    {
+      "name": "Next.js",
+      "category": "frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend"
+    },
+    {
+      "name": "Node.js",
+      "category": "backend"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "backend"
+    },
+    {
+      "name": "GraphQL",
+      "category": "backend"
+    },
+    {
+      "name": "Figma",
+      "category": "design"
+    },
+    {
+      "name": "Framer Motion",
+      "category": "tools"
+    },
+    {
+      "name": "Git",
+      "category": "tools"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": "1",
+      "title": "Horizon Dashboard",
+      "description": "A real-time analytics platform for SaaS businesses, featuring live charts, team management, and custom reporting.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Recharts"
+      ],
+      "image": "/images/horizon-dashboard-analytics.jpg",
+      "href": "#"
+    },
+    {
+      "id": "2",
+      "title": "Bloom E-Commerce",
+      "description": "A boutique online store with a focus on accessibility and conversion, built with a headless CMS and edge delivery.",
+      "tags": [
+        "React",
+        "Shopify",
+        "Tailwind"
+      ],
+      "image": "/images/bloom-ecommerce-boutique.jpg",
+      "href": "#"
+    },
+    {
+      "id": "3",
+      "title": "Waypoint Travel App",
+      "description": "A mobile-first travel planning app that helps users discover, save, and share itineraries with friends.",
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Maps API"
+      ],
+      "image": "/images/waypoint-travel-app.jpg",
+      "href": "#"
+    }
+  ],
+  "cta": {
+    "button": "Start a project",
+    "eyebrow": "Ready?",
+    "heading": "Let's create something great together",
+    "subtext": "Have an idea? Let's discuss how we can bring it to life."
+  },
+  "services": {
+    "eyebrow": "What I Offer",
+    "heading": "Services",
+    "learnMore": "Learn More",
+    "subtext": "Tailored solutions to bring your ideas to life."
+  },
+  "testimonials": {
+    "eyebrow": "Social Proof",
+    "heading": "What Others Say"
+  }
+}
