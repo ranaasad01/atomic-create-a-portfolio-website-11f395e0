@@ -214,7 +214,7 @@ export default function HomePage() {
             <div className="relative w-[420px] h-[520px]">
               {/* Decorative ring */}
               <div className="absolute inset-0 rounded-3xl border border-[var(--brand-primary)]/20 scale-105" />
-              <img src="https://s3-alpha.figma.com/hub/file/2309801432021632936/86b8744f-8a01-44e8-b3f4-36e2b6ee4ec5-cover.png" alt={`${BRAND.name} — ${BRAND.role}`} className="relative z-10 w-full h-full object-cover rounded-3xl shadow-[0_24px_80px_-16px_rgba(0,0,0,0.3)] border border-[var(--border)]" />
+              <img src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/assets/11f395e0-7ed4-4b6d-ba54-3790e757ad22/9431e5dcc7b046b3a9b1e3fa34adc1b1.png?v=1793020970964" alt={`${BRAND.name} — ${BRAND.role}`} className="relative z-10 w-full h-full object-cover rounded-3xl shadow-[0_24px_80px_-16px_rgba(0,0,0,0.3)] border border-[var(--border)]" />
               {/* Floating badge */}
               <div className="absolute -bottom-5 -left-6 z-20 flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-3.5 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.2)]">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--brand-primary)]/15">
