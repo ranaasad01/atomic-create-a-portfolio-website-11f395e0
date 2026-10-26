@@ -150,8 +150,8 @@ export default function ContactPage() {
               {/* Response time badge */}
               <div className="flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-4 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.08)]">
                 <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500" />
                 </span>
                 <p className="text-sm text-[var(--foreground)]">
                   <span className="font-semibold">{t("contact.responseLabel")}</span>{" "}
@@ -213,9 +213,9 @@ export default function ContactPage() {
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.1 }}
-                      className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-500/15"
+                      className="flex h-20 w-20 items-center justify-center rounded-full bg-amber-500/15"
                     >
-                      <CheckCircle size={40} className="text-emerald-500" />
+                      <CheckCircle size={40} className="text-amber-500" />
                     </motion.div>
                     <div>
                       <h3 className="text-xl font-bold text-[var(--foreground)] mb-2">{t("contact.successTitle")}</h3>

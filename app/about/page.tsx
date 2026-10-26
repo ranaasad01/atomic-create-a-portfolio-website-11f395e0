@@ -96,7 +96,7 @@ const CATEGORY_META: Record<
   backend: {
     label: "Backend",
     icon: <Globe size={16} />,
-    color: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    color: "bg-amber-500/10 text-amber-400 border-amber-500/20",
   },
   design: {
     label: "Design",
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }}
                 className="absolute bottom-6 left-6 flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 backdrop-blur-sm"
               >
-                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse" />
                 <span className="text-xs font-medium text-white">
                   {t("about.hero.badge")}
                 </span>

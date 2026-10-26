@@ -29,7 +29,7 @@ const FEATURED_PROJECTS = [
     tags: ["Next.js", "D3.js", "PostgreSQL"],
     image: "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/cc3f3fb705f640538b495aaedec2ef68.png",
     href: "/projects",
-    accent: "from-emerald-500/20 to-teal-500/10",
+    accent: "from-amber-500/20 to-teal-500/10",
   },
   {
     id: "orbit",
