@@ -169,7 +169,12 @@ export default function HomePage() {
 
               <motion.h1 variants={heroHeading} className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-[1.08]">Designer & DevOps</motion.h1>
 
-              <motion.p variants={heroSub} className="text-lg md:text-xl text-[var(--muted-foreground)] leading-relaxed max-w-lg text-pretty">
+              <motion.p
+                variants={heroSub}
+                className="text-lg md:text-xl text-[var(--muted-foreground)] leading-relaxed max-w-lg text-pretty"
+                style={{
+                  color: "#ef4444"
+                }}>
                 {t("hero.subtext")}
               </motion.p>
 
