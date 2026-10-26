@@ -77,7 +77,7 @@ body {
 
 /* Home hero subtitle */
 section#home > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(3) {
-  color: green;
+  color: blue;
 }
 
 /* Home hero h1 */

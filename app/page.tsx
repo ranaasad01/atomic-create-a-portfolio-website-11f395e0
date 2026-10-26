@@ -173,7 +173,7 @@ export default function HomePage() {
                 variants={heroSub}
                 className="text-lg md:text-xl text-[var(--muted-foreground)] leading-relaxed max-w-lg text-pretty"
                 style={{
-                  color: "#ef4444"
+                  color: "#3b82f6"
                 }}>
                 {t("hero.subtext")}
               </motion.p>
