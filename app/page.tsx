@@ -157,7 +157,12 @@ export default function HomePage() {
           {/* Left: copy */}
           <div>
             <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="flex flex-col gap-6">
-              <motion.span variants={fadeInUp} className="inline-flex items-center gap-2 self-start rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)]">
+              <motion.span
+                variants={fadeInUp}
+                className="inline-flex items-center gap-2 self-start rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)]"
+                style={{
+                  color: "#f97316"
+                }}>
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-primary)] animate-pulse" />
                 {t("hero.badge")}
               </motion.span>
