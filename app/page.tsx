@@ -147,318 +147,290 @@ export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section
-        id="home"
-        className="relative min-h-[92vh] flex items-center bg-[var(--background)]"
-      >
+      <section id="home" className="relative min-h-[92vh] flex items-center bg-[var(--background)]">
         {/* Subtle radial glow */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 overflow-hidden"
-        >
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full bg-[var(--brand-primary)]/8 blur-[120px]" />
         </div>
 
         <div className="relative mx-auto max-w-7xl w-full px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-2 gap-16 items-center">
           {/* Left: copy */}
           <div>
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="flex flex-col gap-6"
-            >
-              <motion.span
-                variants={fadeInUp}
-                className="inline-flex items-center gap-2 self-start rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)]"
-              >
+            <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="flex flex-col gap-6">
+              <motion.span variants={fadeInUp} className="inline-flex items-center gap-2 self-start rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-primary)] animate-pulse" />
                 {t("hero.badge")}
               </motion.span>
 
-              <motion.h1
-                variants={heroHeading}
-                className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-[1.08]"
-              >
-                {t("hero.heading1")}
-                <br />
-                <span className="text-[var(--brand-primary)]">
-                  {t("hero.heading2")}
-                </span>
-              </motion.h1>
+              <motion.h1 variants={heroHeading} className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-[1.08]">Designer & DevOps</motion.h1>
 
-              <motion.p
-                variants={heroSub}
-                className="text-lg md:text-xl text-[var(--muted-foreground)] leading-relaxed max-w-lg text-pretty"
-              >
+              <motion.p variants={heroSub} className="text-lg md:text-xl text-[var(--muted-foreground)] leading-relaxed max-w-lg text-pretty">
                 {t("hero.subtext")}
               </motion.p>
 
-              <motion.div
-                variants={heroCta}
-                className="flex flex-wrap gap-4 pt-2"
-              >
-                <Link
-                  href="/projects"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[var(--brand-primary)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-primary-foreground)] shadow-[0_4px_24px_-4px_var(--brand-primary)] transition-all duration-300 hover:brightness-110 hover:shadow-[0_8px_32px_-4px_var(--brand-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2"
-                >
+              <motion.div variants={heroCta} className="flex flex-wrap gap-4 pt-2">
+                <Link href="/projects" className="group inline-flex items-center gap-2 rounded-full bg-[var(--brand-primary)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-primary-foreground)] shadow-[0_4px_24px_-4px_var(--brand-primary)] transition-all duration-300 hover:brightness-110 hover:shadow-[0_8px_32px_-4px_var(--brand-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2">
                   {t("hero.cta.primary")}
                   <ArrowRight
                     size={16}
                     className="transition-transform duration-300 group-hover:translate-x-1"
                   />
                 </Link>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--card)] px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:bg-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2"
-                >
+                <Link href="/contact" className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--card)] px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--brand-primary)]/50 hover:bg-[var(--brand-primary)]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2">
                   {t("hero.cta.secondary")}
                 </Link>
               </motion.div>
 
               {/* Social links */}
-              <motion.div variants={fadeInUp} className="flex items-center gap-4 pt-2">
-                <span className="text-xs text-[var(--muted-foreground)] uppercase tracking-widest">
+              <motion.div variants={fadeInUp} className="flex items-center gap-5 pt-2">
+                <span className="text-xs text-[var(--muted-foreground)] tracking-wide">
                   {t("hero.findMe")}
                 </span>
-                <div className="flex gap-3">
-                  <a
-                    href={BRAND.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted-foreground)] transition-colors hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
-                    aria-label="GitHub"
-                  >
-                    <Github size={16} />
-                  </a>
-                  <a
-                    href={BRAND.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted-foreground)] transition-colors hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin size={16} />
-                  </a>
-                  <a
-                    href={`mailto:${BRAND.email}`}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted-foreground)] transition-colors hover:border-[var(--brand-primary)] hover:text-[var(--brand-primary)]"
-                    aria-label="Email"
-                  >
-                    <Mail size={16} />
-                  </a>
-                </div>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)]">
+                  <Github size={18} />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)]">
+                  <Linkedin size={18} />
+                </a>
+                <a href={`mailto:${BRAND.email}`} aria-label="Email" className="text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)]">
+                  <Mail size={18} />
+                </a>
               </motion.div>
             </motion.div>
           </div>
 
-          {/* Right: image */}
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={heroImage}
-            className="hidden md:flex justify-center items-center"
-          >
-            <div className="relative w-[420px] h-[480px] rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)]/20 to-transparent z-10" />
-              <img
-                src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/45119cc54e2c41e2a7897aa96d6b8625.jpg"
-                alt="Hero"
-                className="w-full h-full object-cover"
-              />
+          {/* Right: portrait */}
+          <motion.div initial="hidden" animate="visible" variants={heroImage} className="relative hidden md:flex justify-center">
+            <div className="relative w-[420px] h-[520px]">
+              {/* Decorative ring */}
+              <div className="absolute inset-0 rounded-3xl border border-[var(--brand-primary)]/20 scale-105" />
+              <img src="https://s3-alpha.figma.com/hub/file/2309801432021632936/86b8744f-8a01-44e8-b3f4-36e2b6ee4ec5-cover.png" alt={`${BRAND.name} — ${BRAND.role}`} className="relative z-10 w-full h-full object-cover rounded-3xl shadow-[0_24px_80px_-16px_rgba(0,0,0,0.3)] border border-[var(--border)]" />
+              {/* Floating badge */}
+              <div className="absolute -bottom-5 -left-6 z-20 flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-3.5 shadow-[0_8px_32px_-8px_rgba(0,0,0,0.2)]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--brand-primary)]/15">
+                  <CheckCircle size={18} className="text-[var(--brand-primary)]" />
+                </span>
+                <div>
+                  <p className="text-xs font-semibold text-[var(--foreground)]">
+                    {t("hero.badge2.title")}
+                  </p>
+                  <p className="text-[11px] text-[var(--muted-foreground)]">
+                    {t("hero.badge2.sub")}
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
       </section>
-
-      {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="border-y border-[var(--border)] bg-[var(--card)]/50">
-        <div className="mx-auto max-w-7xl px-6 md:px-10 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {STATS.map((stat) => (
-              <Reveal key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[var(--brand-primary)]">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-[var(--muted-foreground)] mt-1">
-                  {stat.label}
-                </div>
-              </Reveal>
-            ))}
+      {/* ── Stats bar ────────────────────────────────────────────────────── */}
+      <Reveal>
+        <section className="border-y border-[var(--border)] bg-[var(--card)]">
+          <div className="mx-auto max-w-7xl px-6 md:px-10 py-10">
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x divide-[var(--border)]">
+              {STATS.map((stat, i) => (
+                <motion.div key={i} variants={fadeInUp} className="flex flex-col items-center text-center md:px-8">
+                  <span className="text-4xl font-bold tracking-tight text-[var(--foreground)]">
+                    {stat.value}
+                  </span>
+                  <span className="mt-1 text-sm text-[var(--muted-foreground)]">
+                    {stat.label}
+                  </span>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Reveal>
+      {/* ── Featured Projects ─────────────────────────────────────────────── */}
+      <Reveal>
+        <section id="projects" className="py-24 md:py-32 bg-[var(--background)]">
+          <div className="mx-auto max-w-7xl px-6 md:px-10">
+            {/* Header */}
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+              <div>
+                <p className="text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)] mb-3">
+                  {t("projects.eyebrow")}
+                </p>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--foreground)] text-balance">
+                  {t("projects.heading")}
+                </h2>
+              </div>
+              <Link href="/projects" className="group inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-primary)] hover:underline underline-offset-4 transition-all">
+                {t("projects.viewAll")}
+                <ArrowRight
+                  size={15}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </Link>
+            </div>
 
-      {/* ── Featured Projects ────────────────────────────────────────────── */}
-      <section id="projects" className="py-24 md:py-32 bg-[var(--background)]">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <Reveal className="mb-16 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand-primary)] mb-3">
-              {t("projects.eyebrow")}
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
-              {t("projects.heading")}
-            </h2>
-            <p className="mt-4 text-[var(--muted-foreground)] max-w-xl mx-auto">
-              {t("projects.subheading")}
-            </p>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {FEATURED_PROJECTS.map((project, i) => (
-              <Reveal key={project.id} delay={i * 0.1}>
-                <Link
-                  href={project.href}
-                  className={`group block rounded-2xl overflow-hidden border border-[var(--border)] bg-gradient-to-br ${project.accent} bg-[var(--card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
-                >
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-bold text-lg text-[var(--foreground)] mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-4">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full bg-[var(--accent)] px-3 py-1 text-xs font-medium text-[var(--accent-foreground)]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+            {/* Bento grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {FEATURED_PROJECTS.map((project, i) => (
+                <Reveal key={project.id} delay={i * 0.08}>
+                  <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.3, ease: "easeOut" }} className={`group relative flex flex-col rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:shadow-[0_4px_32px_-8px_rgba(0,0,0,0.18)] transition-shadow duration-300 ${i === 0 ? "lg:col-span-2" : ""}`}>
+                    {/* Image */}
+                    <div className={`relative overflow-hidden ${i === 0 ? "h-56" : "h-44"}`}>
+                      <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" />
                     </div>
-                  </div>
-                </Link>
-              </Reveal>
-            ))}
+
+                    {/* Content */}
+                    <div className="flex flex-col flex-1 p-6 gap-3">
+                      <h3 className="text-lg font-bold text-[var(--foreground)] group-hover:text-[var(--brand-primary)] transition-colors duration-200">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-[var(--muted-foreground)] leading-relaxed flex-1">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        {project.tags.map((tag) => (<span key={tag} className="rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-1 text-[11px] font-medium text-[var(--muted-foreground)]">
+                          {tag}
+                        </span>))}
+                      </div>
+                      <Link href={project.href} className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--brand-primary)] hover:underline underline-offset-4">
+                        {t("projects.caseStudy")}
+                        <ArrowRight size={13} />
+                      </Link>
+                    </div>
+                  </motion.div>
+                </Reveal>
+              ))}
+            </div>
           </div>
-
-          <Reveal className="mt-12 text-center">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-primary)] hover:underline"
-            >
-              {t("projects.viewAll")}
-              <ArrowRight size={16} />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
+        </section>
+      </Reveal>
       {/* ── Services ─────────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 bg-[var(--card)]/30">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <Reveal className="mb-16 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand-primary)] mb-3">
-              {t("services.eyebrow")}
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
-              {t("services.heading")}
-            </h2>
-            <p className="mt-4 text-[var(--muted-foreground)] max-w-xl mx-auto">
-              {t("services.subtext")}
-            </p>
-          </Reveal>
+      <Reveal>
+        <section id="services" className="py-24 md:py-32 bg-[var(--card)] border-y border-[var(--border)]">
+          <div className="mx-auto max-w-7xl px-6 md:px-10">
+            <div className="grid lg:grid-cols-[1fr_2fr] gap-16 items-start">
+              {/* Left sticky label */}
+              <div className="lg:sticky lg:top-28">
+                <p className="text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)] mb-3">
+                  {t("services.eyebrow")}
+                </p>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-tight">
+                  {t("services.heading")}
+                </h2>
+                <p className="mt-5 text-[var(--muted-foreground)] leading-relaxed text-pretty">
+                  {t("services.subtext")}
+                </p>
+                <Link href="/about" className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-primary)] hover:underline underline-offset-4">
+                  {t("services.learnMore")}
+                  <ArrowRight
+                    size={15}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </Link>
+              </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {SERVICES.map((service, i) => (
-              <Reveal key={service.title} delay={i * 0.08}>
-                <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-6 h-full flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-primary)]/10 text-[var(--brand-primary)]">
-                    <service.icon size={22} />
-                  </div>
-                  <h3 className="font-bold text-[var(--foreground)]">{service.title}</h3>
-                  <p className="text-sm text-[var(--muted-foreground)] leading-relaxed flex-1">
-                    {service.body}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+              {/* Right: service list */}
+              <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid sm:grid-cols-2 gap-5">
+                {SERVICES.map((svc, i) => {
+                  const Icon = svc.icon;
+                  return (
+                    <motion.div key={i} variants={scaleIn} whileHover={{ y: -3 }} transition={{ duration: 0.25, ease: "easeOut" }} className="flex flex-col gap-4 rounded-2xl border border-[var(--border)] bg-[var(--background)] p-6 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_4px_16px_-4px_rgba(0,0,0,0.08)] hover:border-[var(--brand-primary)]/30 transition-colors duration-300">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--brand-primary)]/12 text-[var(--brand-primary)]">
+                        <Icon size={22} />
+                      </span>
+                      <div>
+                        <h3 className="font-bold text-[var(--foreground)] mb-1.5">
+                          {svc.title}
+                        </h3>
+                        <p className="text-sm text-[var(--muted-foreground)] leading-relaxed">
+                          {svc.body}
+                        </p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      </Reveal>
       {/* ── Testimonials ─────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 bg-[var(--background)]">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <Reveal className="mb-16 text-center">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand-primary)] mb-3">
-              {t("testimonials.eyebrow")}
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
-              {t("testimonials.heading")}
-            </h2>
-          </Reveal>
+      <Reveal>
+        <section id="testimonials" className="py-24 md:py-32 bg-[var(--background)]">
+          <div className="mx-auto max-w-7xl px-6 md:px-10">
+            <div className="text-center mb-14">
+              <p className="text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)] mb-3">
+                {t("testimonials.eyebrow")}
+              </p>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--foreground)] text-balance">
+                {t("testimonials.heading")}
+              </h2>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((testimonial, i) => (
-              <Reveal key={testimonial.id} delay={i * 0.1}>
-                <div className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-8 flex flex-col gap-6 h-full">
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid md:grid-cols-3 gap-6">
+              {TESTIMONIALS.map((t_item, i) => (
+                <motion.div key={t_item.id} variants={fadeInUp} whileHover={{ y: -4 }} transition={{ duration: 0.25, ease: "easeOut" }} className="flex flex-col gap-5 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.10)] hover:shadow-[0_4px_32px_-8px_rgba(0,0,0,0.16)] transition-shadow duration-300">
+                  {/* Stars */}
                   <div className="flex gap-1">
-                    {[...Array(5)].map((_, j) => (
+                    {Array.from({ length: 5 }).map((_, s) => (
                       <Star
-                        key={j}
-                        size={16}
+                        key={s}
+                        size={14}
                         className="fill-[var(--brand-primary)] text-[var(--brand-primary)]"
                       />
                     ))}
                   </div>
-                  <p className="text-[var(--muted-foreground)] leading-relaxed flex-1 italic">
-                    &ldquo;{testimonial.quote}&rdquo;
+                  <p className="text-sm text-[var(--foreground)] leading-relaxed flex-1 italic">
+                    &ldquo;{t_item.quote}&rdquo;
                   </p>
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="h-10 w-10 rounded-full bg-[var(--accent)]"
-                    />
+                  <div className="flex items-center gap-3 pt-2 border-t border-[var(--border)]">
+                    <img src={t_item.avatar} alt={t_item.name} className="h-10 w-10 rounded-full object-cover border border-[var(--border)]" />
                     <div>
-                      <div className="font-semibold text-sm text-[var(--foreground)]">
-                        {testimonial.name}
-                      </div>
-                      <div className="text-xs text-[var(--muted-foreground)]">
-                        {testimonial.role}
-                      </div>
+                      <p className="text-sm font-semibold text-[var(--foreground)]">
+                        {t_item.name}
+                      </p>
+                      <p className="text-xs text-[var(--muted-foreground)]">
+                        {t_item.role}
+                      </p>
                     </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      </Reveal>
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 bg-[var(--brand-primary)]">
-        <div className="mx-auto max-w-4xl px-6 md:px-10 text-center">
-          <Reveal>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--brand-primary-foreground)]/70 mb-4">
-              {t("cta.eyebrow")}
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-[var(--brand-primary-foreground)] mb-6 text-balance">
-              {t("cta.heading")}
-            </h2>
-            <p className="text-[var(--brand-primary-foreground)]/80 mb-10 max-w-xl mx-auto">
-              {t("cta.subtext")}
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-primary-foreground)] px-8 py-4 text-sm font-bold text-[var(--brand-primary)] transition-all duration-300 hover:brightness-95 hover:shadow-xl"
-            >
-              {t("cta.button")}
-              <ArrowRight size={16} />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
+      <Reveal>
+        <section id="contact" className="py-24 md:py-32 bg-[var(--card)] border-t border-[var(--border)]">
+          <div className="mx-auto max-w-3xl px-6 md:px-10 text-center">
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-center gap-6">
+              <motion.span variants={fadeInUp} className="inline-flex items-center gap-2 rounded-full border border-[var(--brand-primary)]/30 bg-[var(--brand-primary)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--brand-primary)]">
+                {t("cta.eyebrow")}
+              </motion.span>
+
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--foreground)] text-balance">
+                {t("cta.heading")}
+              </motion.h2>
+
+              <motion.p variants={fadeInUp} className="text-lg text-[var(--muted-foreground)] leading-relaxed text-pretty max-w-xl">
+                {t("cta.subtext")}
+              </motion.p>
+
+              <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4 pt-2">
+                <Link href="/contact" className="group inline-flex items-center gap-2 rounded-full bg-[var(--brand-primary)] px-8 py-4 text-sm font-semibold text-[var(--brand-primary-foreground)] shadow-[0_4px_24px_-4px_var(--brand-primary)] transition-all duration-300 hover:brightness-110 hover:shadow-[0_8px_32px_-4px_var(--brand-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2">
+                  {t("cta.button")}
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </Link>
+                <a href={`mailto:${BRAND.email}`} className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--background)] px-8 py-4 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--brand-primary)]/50 hover:bg-[var(--brand-primary)]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-primary)] focus-visible:ring-offset-2">
+                  <Mail size={15} />
+                  {BRAND.email}
+                </a>
+              </motion.div>
+            </motion.div>
+          </div>
+        </section>
+      </Reveal>
     </main>
   );
 }
