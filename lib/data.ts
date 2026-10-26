@@ -20,13 +20,12 @@ export interface Skill {
 }
 
 export const BRAND = {
-  name: "Alex Morgan",
+  name: "datics.ai",
   tagline: "Crafting thoughtful digital experiences",
   email: "hello@alexmorgan.dev",
   github: "https://github.com",
   linkedin: "https://linkedin.com",
   twitter: "https://twitter.com",
-  role: "Full-Stack Developer & Designer",
 } as const;
 
 export const navLinks: NavLink[] = [

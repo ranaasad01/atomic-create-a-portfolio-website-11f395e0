@@ -20,11 +20,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   formatDetection: { telephone: false, date: false, email: false, address: false },
-  title: "Alex Morgan — Creative Developer",
+  title: "datics.ai",
   description:
     "Personal portfolio of Alex Morgan, a full-stack developer crafting thoughtful digital experiences.",
   openGraph: {
-    title: "Alex Morgan — Creative Developer",
+    title: "datics.ai",
     description:
       "Personal portfolio of Alex Morgan, a full-stack developer crafting thoughtful digital experiences.",
     type: "website",

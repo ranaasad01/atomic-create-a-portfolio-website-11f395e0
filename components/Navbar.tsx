@@ -1,11 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
-import { navLinks, BRAND } from "@/lib/data";
+
+import { navLinks } from "@/lib/data";
 import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
@@ -61,7 +62,7 @@ export function Navbar() {
           href="/"
           className="font-display text-xl font-semibold tracking-tight text-[var(--foreground)] hover:text-[var(--accent)] transition-colors duration-200"
         >
-          {BRAND.name}
+          datics.ai
         </Link>
 
         {/* Desktop nav */}
