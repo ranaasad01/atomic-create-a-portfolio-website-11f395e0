@@ -131,8 +131,7 @@ function SkillPill({ name, category }: { name: string; category: Skill["category
       className={cn(
         "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium",
         meta.color
-      )}
-    >
+      )}>
       {name}
     </motion.span>
   );
@@ -149,21 +148,14 @@ function SkillGroup({ category }: { category: Skill["category"] }) {
           className={cn(
             "flex h-7 w-7 items-center justify-center rounded-lg border",
             meta.color
-          )}
-        >
+          )}>
           {meta.icon}
         </span>
         <span className="text-sm font-semibold text-[hsl(var(--foreground))]">
           {meta.label}
         </span>
       </div>
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-60px" }}
-        className="flex flex-wrap gap-2"
-      >
+      <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} className="flex flex-wrap gap-2">
         {skills.map((s) => (
           <SkillPill key={s.name} name={s.name} category={s.category} />
         ))}
@@ -185,8 +177,7 @@ function TimelineItem({ entry, index }: { entry: TimelineEntry; index: number })
               isWork
                 ? "border-[var(--accent)] bg-[var(--accent)]/10 text-[var(--accent)]"
                 : "border-violet-400 bg-violet-500/10 text-violet-400"
-            )}
-          >
+            )}>
             {isWork ? <Briefcase size={15} /> : <GraduationCap size={15} />}
           </div>
           {/* connector */}
@@ -223,20 +214,11 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-0 lg:grid-cols-2">
             {/* Portrait */}
             <div className="relative min-h-[420px] overflow-hidden bg-[hsl(var(--card))] lg:min-h-[560px]">
-              <img
-                src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/7f0034f72c234a35818da9daa0ba43c1.jpg"
-                alt={t("about.hero.imageAlt")}
-                className="h-full w-full object-cover object-center"
-              />
+              <img src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/7f0034f72c234a35818da9daa0ba43c1.jpg" alt={t("about.hero.imageAlt")} className="h-full w-full object-cover object-center" />
               {/* Subtle overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/10" />
               {/* Floating badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }}
-                className="absolute bottom-6 left-6 flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 backdrop-blur-sm"
-              >
+              <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }} className="absolute bottom-6 left-6 flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
                 <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse" />
                 <span className="text-xs font-medium text-white">
                   {t("about.hero.badge")}
@@ -246,36 +228,16 @@ export default function AboutPage() {
 
             {/* Headline block */}
             <div className="flex flex-col justify-center px-8 py-16 lg:px-14 lg:py-20">
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-                className="mb-3 text-xs font-semibold uppercase tracking-widest text-[var(--accent)]"
-              >
+              <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: "easeOut" }} className="mb-3 text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
                 {t("about.hero.eyebrow")}
               </motion.p>
-              <motion.h1
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1, duration: 0.55, ease: "easeOut" }}
-                className="mb-6 text-4xl font-bold tracking-tight text-[hsl(var(--foreground))] text-balance lg:text-5xl"
-              >
+              <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.55, ease: "easeOut" }} className="mb-6 text-4xl font-bold tracking-tight text-[hsl(var(--foreground))] text-balance lg:text-5xl">
                 {t("about.hero.headline")}
               </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
-                className="mb-8 text-base leading-relaxed text-[hsl(var(--muted-foreground))] text-pretty"
-              >
+              <motion.p initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }} className="mb-8 text-base leading-relaxed text-[hsl(var(--muted-foreground))] text-pretty">
                 {t("about.hero.subtext")}
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.35, duration: 0.4 }}
-                className="flex flex-wrap gap-3"
-              >
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35, duration: 0.4 }} className="flex flex-wrap gap-3">
                 {(
                   Array.isArray(t.raw("about.hero.stats"))
                     ? t.raw("about.hero.stats")
@@ -285,10 +247,7 @@ export default function AboutPage() {
                     stat: { value: string; label: string },
                     i: number
                   ) => (
-                    <div
-                      key={i}
-                      className="rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] px-5 py-3"
-                    >
+                    <div key={i} className="rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] px-5 py-3">
                       <p className="text-xl font-bold text-[hsl(var(--foreground))]">
                         {stat.value}
                       </p>
@@ -303,7 +262,6 @@ export default function AboutPage() {
           </div>
         </section>
       </Reveal>
-
       {/* ── Bio ── */}
       <Reveal>
         <section className="mx-auto max-w-3xl px-6 py-20 md:py-28">
@@ -314,13 +272,12 @@ export default function AboutPage() {
             {t("about.bio.heading")}
           </h2>
           <div className="space-y-5 text-base leading-relaxed text-[hsl(var(--muted-foreground))]">
-            <p>{t("about.bio.p1")}</p>
+            <p>I design and build digital products that work as good as they look. With deep roots in both design and development, I close the gap between form and function to deliver user experiences that feel natural from the first click.</p>
             <p>{t("about.bio.p2")}</p>
             <p>{t("about.bio.p3")}</p>
           </div>
         </section>
       </Reveal>
-
       {/* ── Skills ── */}
       <Reveal>
         <section className="border-t border-[hsl(var(--border))] bg-[hsl(var(--card))]/40 px-6 py-20 md:py-28">
@@ -344,7 +301,6 @@ export default function AboutPage() {
           </div>
         </section>
       </Reveal>
-
       {/* ── Timeline ── */}
       <section className="mx-auto max-w-3xl px-6 py-20 md:py-28">
         <Reveal>
@@ -364,7 +320,6 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-
       {/* ── CTA strip ── */}
       <Reveal>
         <section className="border-t border-[hsl(var(--border))] bg-[hsl(var(--card))]/60 px-6 py-16">
@@ -377,10 +332,7 @@ export default function AboutPage() {
                 {t("about.cta.subtext")}
               </p>
             </div>
-            <a
-              href={`mailto:${BRAND.email}`}
-              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-black transition-all duration-300 hover:opacity-90 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2"
-            >
+            <a href={`mailto:${BRAND.email}`} className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-black transition-all duration-300 hover:opacity-90 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2">
               {t("about.cta.button")}
             </a>
           </div>
