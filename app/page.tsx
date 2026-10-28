@@ -167,7 +167,7 @@ export default function HomePage() {
                 {t("hero.badge")}
               </motion.span>
 
-              <motion.h1 variants={heroHeading} className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-[1.08]">Designer & DevOps</motion.h1>
+              <motion.h1 variants={heroHeading} className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[var(--foreground)] text-balance leading-[1.08]">Creative Engineer, DevOps Specialist</motion.h1>
 
               <motion.p
                 variants={heroSub}
